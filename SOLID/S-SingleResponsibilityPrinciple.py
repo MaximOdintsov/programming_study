@@ -1,8 +1,13 @@
-# ПРИНЦИП ЕДИНСТВЕННОЙ ОТВЕТСТВЕННОСТИ
+# ПРИНЦИП ЕДИНСТВЕННОЙ ОТВЕТСТВЕННОСТИ (SRP)
+
+# У каждого класса должна быть только одна ответственность
+# и он не должен брать на себя другие обязанности.
+
+# У класса должна быть одна и только одна причина для изменения
 
 
-# АНТИПАТТЕРН
-class TelephoneDirectoryAntiPattern:
+# АНТИПАТТЕРН GodObject
+class TelephoneDirectoryGodObject:
     def __init__(self):
         self.telephone_directory = {}
 
@@ -50,7 +55,7 @@ class TelephoneDirectoryAntiPattern:
 
 
 # ПАТТЕРН
-class TelephoneDirectoryPattern:
+class TelephoneDirectorySingleResponsibilityPrinciple:
     def __init__(self):
         self.telephone_directory = {}
 
